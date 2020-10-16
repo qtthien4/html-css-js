@@ -1,0 +1,21 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 12</title>
+</head>
+
+<body>
+    <p>con cho</p>
+    <p class="foo"> con meo </p>
+    <p class="foo"> con chuot </p>
+    <a class='fooo'>tho</a>
+    <script>
+        var p = document.getElementsByTagName('p');
+
+        for (var i in p) {
+            if (p[i].getAttribute('class') === 'foo')
+                p[i].innerHTML += '<a href = "coders.tokyo" > coders.tokyo </a>'
+        }
+    </script>
+</body>
