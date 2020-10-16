@@ -1,0 +1,20 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 12</title>
+</head>
+
+<body>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <button onclick="appearName()">Say Hi!</button>
+    <script>
+        // Viết code sao cho khi nhập tên ai đó vào ô input,
+        // click vào nút Say Hi! sẽ hiển thị ra alert box với nội dung: Hi kèm theo tên người đó. Ví dụ: Hi Coders.Tokyo
+        function appearName() {
+            var input = document.getElementById('name');
+            alert(`hi ${input.value}`);
+            input.value = '';
+        }
+    </script>
+</body>
