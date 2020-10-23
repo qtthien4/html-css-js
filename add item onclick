@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+    <ul id="test">
+
+    </ul>
+    <input type="text" id="new-item">
+    <button onclick="addItem()">ADD </button>
+    <script>
+        var thein = [
+            "wake up", "ajfhgjaf", "jafgakf"
+        ]
+
+        function addItem() {
+            var input = document.getElementById('new-item');
+            thein.push(input.value);
+            render();
+        }
+
+        function render() {
+            var htmlId = document.getElementById("test");
+            var content = thein.map(function(item) {
+                return '<li>' + item + '</li>';
+            });
+            htmlId.innerHTML = content.join('');
+        }
+        render();
+    </script>
+</body>
+
+</html>
