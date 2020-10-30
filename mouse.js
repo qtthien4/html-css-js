@@ -1,3 +1,5 @@
 function Mouse(color){
-	this.color = color;
+	this.color = color; 
 }
+
+module.exports = Mouse
