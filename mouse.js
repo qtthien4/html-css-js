@@ -3,7 +3,7 @@ function Mouse(color){
 	this die = false; 
 }
 Mouse.prototype.die = function(){
-	this.dead = true;
+	this.dead =  true;
 }
 
 module.exports = Mouse
