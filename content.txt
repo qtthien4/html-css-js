@@ -2,3 +2,36 @@ git init
 git status
 git add
 git commit (git commit -m 'ten muon dat'
+
+bai2
+git log
+git show
+git diff
+
+bai3 
+working directory
+staging area
+git repository
+
+bai4 
+git checkout -- <ten file> return nhung gi da ghi truoc do
+git reset
+
+bai5 
+- git checkout-b --<ten branch> (tao nhanh)
+- git checkout <ten nhanh> (de doi nhanh)
+- git merge {  (chuyen nhung commit tu nhanh nay sang nhanh khac)
+A <--- B
+( master <--- feature/dog-class)
+b1: checkout A
+b2: git merge B
+}
+- git branch -D <branch> 	(xoa nhanh)
+
+// bai6 (git reset neéu có commit k vừa ý muốn quay lại thì dùng những cái này)
+-git reset --soft <id box can mo ra> ( (da add)khi commit lai co the doi ten khac)
+ git reset --mixed <id box can mo ra> ( (chua add)khi commit lai co the doi ten)
+ git reset --hard <id box can mo ra> ( mat het du lieu WARNING)
+
+//bai 7
+Git revert <commit> hoàn lại (khá nguy hiểm tránh dùng)
